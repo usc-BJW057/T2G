@@ -16,20 +16,23 @@
         </GridPane>
     </center>
 
-    <!-- Contains the sections that display the player's health and points -->
     <top>
         <HBox alignment="CENTER" spacing="20">
+
+            <!-- Contains the sections that display the player's health and score -->
             <Text fx:id="currentHealth" text="Health: "/>
             <Text fx:id="currentScore" text="Score: "/>
 
             <!-- Allow the players to choose their level of difficulty -->
             <TextField fx:id="difficultyInput" promptText="Enter difficulty (5-15)"/>
             <Button text="Confirm Difficulty" onAction="#setDifficulty"/>
+
         </HBox>
     </top>
 
     <bottom>
         <HBox>
+            <!-- These are the buttons that the user will use to navigate the grid -->
             <Button text="UP" onAction="#Up"/>
             <Button text="DOWN" onAction="#Down"/>
             <Button text="LEFT" onAction="#Left"/>

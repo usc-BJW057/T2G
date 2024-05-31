@@ -83,6 +83,10 @@ public class GameEngine {
     }
 
     // Similar to how insertTraps and insertTreasure are setup, 2 healthPacks are put onto the map
+    // The healthPacks are located at different locations each game
+
+    // This seciton is commented out because there were some bugs that caused the game to not run
+
     /* private void insertHPs(int size, int hpCount) {
         Random rand = new Random();
         int hpPlaced = 0;
@@ -102,7 +106,7 @@ public class GameEngine {
         }
     } */
 
-    // Getters used to access the private objects, values and methods
+    // Getter methods used to access the private objects, values and methods
 
     public int getSize() {
         return map.length;

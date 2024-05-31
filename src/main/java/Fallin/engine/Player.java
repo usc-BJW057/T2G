@@ -10,11 +10,16 @@ public class Player extends Cell {
 
     public Player() {
 
+        // Setting up the player to be represented by a small black circle
         Circle playerCircle = new Circle(5);
         playerCircle.setFill(Color.BLACK);
 
-        this.health = 2;
-        this.score = 0;
+        /*
+        Player starts with 2 health, so in the case that they
+        begin surrounded by traps, they still have a chan
+        */
+        health = 1;
+        score = 0;
 
         getChildren().add(playerCircle);
     }
